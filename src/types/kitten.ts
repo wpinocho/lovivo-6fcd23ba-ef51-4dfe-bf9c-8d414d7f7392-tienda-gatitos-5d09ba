@@ -1,17 +1,11 @@
 export interface Kitten {
-  id: string;
+  id: number;
   name: string;
   breed: string;
   age: string;
+  gender: string;
   price: number;
   image: string;
   description: string;
-  color: string;
-  gender: 'male' | 'female';
-  vaccinated: boolean;
-  available: boolean;
-}
-
-export interface CartItem extends Kitten {
-  quantity: number;
+  features: string[];
 }
